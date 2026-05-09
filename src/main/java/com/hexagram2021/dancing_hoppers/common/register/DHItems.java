@@ -25,6 +25,13 @@ public final class DHItems {
 			"hopper_upgrade_smithing_template", () -> new Item(new Item.Properties())
 	);
 
+    public static final RegistryObject<BlockItem> ACCELERATED_INVERTED_HOPPER = REGISTER.register(
+            "accelerated_inverted_hopper", () -> new BlockItem(DHBlocks.ACCELERATED_INVERTED_HOPPER.get(), new Item.Properties())
+    );
+    public static final RegistryObject<BlockItem> ACCELERATED_LATERAL_HOPPER = REGISTER.register(
+            "accelerated_lateral_hopper", () -> new BlockItem(DHBlocks.ACCELERATED_LATERAL_HOPPER.get(), new Item.Properties())
+    );
+
 	private DHItems() {
 	}
 

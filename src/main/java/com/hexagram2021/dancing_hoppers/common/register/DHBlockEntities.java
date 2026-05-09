@@ -1,9 +1,7 @@
 package com.hexagram2021.dancing_hoppers.common.register;
 
 import com.google.common.collect.ImmutableSet;
-import com.hexagram2021.dancing_hoppers.common.block.entity.AcceleratedHopperBlockEntity;
-import com.hexagram2021.dancing_hoppers.common.block.entity.InvertedHopperBlockEntity;
-import com.hexagram2021.dancing_hoppers.common.block.entity.LateralHopperBlockEntity;
+import com.hexagram2021.dancing_hoppers.common.block.entity.*;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,6 +23,13 @@ public final class DHBlockEntities {
 	public static final RegistryObject<BlockEntityType<AcceleratedHopperBlockEntity>> ACCELERATED_HOPPER = REGISTER.register(
 			"accelerated_hopper", () -> new BlockEntityType<>(AcceleratedHopperBlockEntity::new, ImmutableSet.of(DHBlocks.ACCELERATED_HOPPER.get()), null)
 	);
+
+    public static final RegistryObject<BlockEntityType<AcceleratedInvertedHopperBlockEntity>> ACCELERATED_INVERTED_HOPPER = REGISTER.register(
+            "accelerated_inverted_hopper", () -> new BlockEntityType<>(AcceleratedInvertedHopperBlockEntity::new, ImmutableSet.of(DHBlocks.ACCELERATED_INVERTED_HOPPER.get()), null)
+    );
+    public static final RegistryObject<BlockEntityType<AcceleratedLateralHopperBlockEntity>> ACCELERATED_LATERAL_HOPPER = REGISTER.register(
+            "accelerated_lateral_hopper", () -> new BlockEntityType<>(AcceleratedLateralHopperBlockEntity::new, ImmutableSet.of(DHBlocks.ACCELERATED_LATERAL_HOPPER.get()), null)
+    );
 
 	private DHBlockEntities() {
 	}

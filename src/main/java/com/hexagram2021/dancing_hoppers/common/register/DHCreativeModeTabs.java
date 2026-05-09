@@ -21,6 +21,8 @@ public final class DHCreativeModeTabs {
 			() -> new ItemStack(DHItems.ACCELERATED_HOPPER.get()),
 			(parameters, output) -> {
 				output.accept(DHItems.ACCELERATED_HOPPER.get());
+                output.accept(DHItems.ACCELERATED_INVERTED_HOPPER.get());
+                output.accept(DHItems.ACCELERATED_LATERAL_HOPPER.get());
 				output.accept(DHItems.INVERTED_HOPPER.get());
 				output.accept(DHItems.LATERAL_HOPPER.get());
 				output.accept(DHItems.HOPPER_UPGRADE_SMITHING_TEMPLATE.get());
